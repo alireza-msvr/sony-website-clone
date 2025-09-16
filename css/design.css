@@ -1,3 +1,5 @@
+/* Slider banned */
+
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -99,3 +101,50 @@
     
     transform: scale(1.5);
 }
+
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+  .text-box {
+    width: 50%;
+    top: 200px;
+    padding: 1.25rem;
+  }
+
+  .text-box h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .text-box {
+    position: static; /* Stack below image */
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .text-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-box p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+  }
+
+  .sliderbtn {
+    position: static;
+    margin: 10px auto;
+    background: transparent;
+  }
+}
+
+
