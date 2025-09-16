@@ -53,7 +53,7 @@ body {
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-secondary);
   text-decoration: none;
   transition: color var(--transition-speed) var(--transition-ease);
 }
