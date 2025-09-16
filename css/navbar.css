@@ -1,4 +1,4 @@
-nav {
+.main-navbar {
   display: flex;
   width: 100%;
   background-color: var(--color-primary);
@@ -113,25 +113,24 @@ nav {
   .hamburger {
     display: block;
   }
- 
 }
 
-.offscreen{
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font: 3rem;
-    transform: .3s ease;
+.offscreen {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 3rem;
+  transform: 0.3s ease;
 }
-.offscreen.active{
-    right: 0;
+.offscreen.active {
+  right: 0;
 }
