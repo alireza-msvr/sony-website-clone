@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 async function loadComponent(id, file) {
   try {
     const res = await fetch(file);
@@ -9,6 +9,16 @@ async function loadComponent(id, file) {
   }
 }
 
+
 // Load shared components
 loadComponent("navbar", "components/navbar.html");
 loadComponent("footer", "components/footer.html");
+
+
+  // Hamburger menu
+// const offscreen = document.querySelector(".offscreen");
+// const hamburgerIcon = document.querySelector(".hamburger");
+
+// hamburgerIcon.addEventListener("click", () => {
+//   offscreen.classList.toggle("active");
+// });
