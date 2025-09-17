@@ -34,10 +34,12 @@ next.addEventListener('click', () => {
 });
 
 // Auto-play
-// setInterval(() => {
-//   currentIndex = (currentIndex + 1) % slides.length;
-//   showSlide(currentIndex);
-// }, 5000);
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}, 5000);
 
 // Initialize
 showSlide(currentIndex);
+
+
