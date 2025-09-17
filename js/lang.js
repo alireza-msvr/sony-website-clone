@@ -48,17 +48,15 @@ function setLang(lang) {
     const el = document.getElementById(key);
     if (el) {
       if (el.tagName.toLowerCase() === "button") {
-        el.innerHTML = translations[lang][key]; // keep icons in buttons
+        el.innerHTML = translations[lang][key]; 
       } else {
         el.textContent = translations[lang][key];
       }
     }
   }
-  // remember choice
   localStorage.setItem("preferredLang", lang);
 }
 
-// auto-load last choice
 document.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("preferredLang") || "en";
   setLang(saved);
