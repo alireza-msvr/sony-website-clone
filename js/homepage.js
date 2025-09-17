@@ -42,4 +42,42 @@ setInterval(() => {
 // Initialize
 showSlide(currentIndex);
 
+const susTrack = document.querySelector('.sus-slider-track');
+const susSlides = document.querySelectorAll('.sus-slide');
+const susPrevBtn = document.querySelector('.sus-prev');
+const susNextBtn = document.querySelector('.sus-next');
+const susDots = document.querySelectorAll('.sus-dot');
+
+let susIndex = 0;
+
+function susUpdateSlider() {
+  susTrack.style.transform = `translateX(-${susIndex * 100}%)`;
+  susUpdateDots();
+}
+
+function susUpdateDots() {
+  susDots.forEach((dot, idx) => {
+    dot.classList.toggle('active', idx === susIndex);
+  });
+}
+
+susNextBtn.addEventListener('click', () => {
+  susIndex = (susIndex + 1) % susSlides.length;
+  susUpdateSlider();
+});
+
+susPrevBtn.addEventListener('click', () => {
+  susIndex = (susIndex - 1 + susSlides.length) % susSlides.length;
+  susUpdateSlider();
+});
+
+susDots.forEach((dot, idx) => {
+  dot.addEventListener('click', () => {
+    susIndex = idx;
+    susUpdateSlider();
+  });
+});
+
+
+
 
