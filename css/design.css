@@ -13,11 +13,11 @@
   transition: background-color 0.3s ease;
 }
 .intro-image img {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .intro-hero {
   display: flex;
@@ -306,4 +306,21 @@
   .related-item {
     flex: 1 1 100%;
   }
+}
+
+.lang-button {
+  display: flex;
+  gap: 8px;
+  position: fixed;
+  top: 90px;
+  right: 30px;
+  z-index: 999;
+}
+.lang-button button {
+  padding: 8px 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }

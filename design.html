@@ -20,17 +20,23 @@
   <body>
     <div id="navbar"></div>
 
+    <div class="lang-button">
+      <button onclick="setLang('en')">English</button>
+      <button onclick="setLang('ja')">日本語</button>
+    </div>
     <div class="intro">
       <div class="intro-text">
-        <h1>Design</h1>
-        <button>Menu <i class="bx bx-chevron-down"></i></button>
+        <h1 id="intro-title">Design</h1>
+        <button id="intro-menu">Menu <i class="bx bx-chevron-down"></i></button>
       </div>
       <div class="intro-image">
         <img src="assets/images/Design/mv.png" alt="Design inovation" />
       </div>
       <div class="intro-hero">
-        <h2>Create new values through the power of design.</h2>
-        <p>
+        <h2 id="intro-heading">
+          Create new values through the power of design.
+        </h2>
+        <p id="intro-paragraph">
           Through the power of design, we envision new paradigms, give meaning
           to ideas, and engage globally — a process that resonates with a
           diversity of values, bringing new standards into being. As we continue
@@ -41,7 +47,7 @@
     </div>
 
     <div class="design-slider">
-      <h2>What's New</h2>
+      <h2 id="whats-new">What's New</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -121,13 +127,13 @@
 
     <div class="about">
       <div class="about-text">
-        <h2>About</h2>
+        <h2 id="about-title">About</h2>
       </div>
       <img src="assets/images/Design/about.avif" alt="about" />
     </div>
 
     <section class="stories-section">
-      <div class="stories-header">Stories</div>
+      <div class="stories-header" id="stories-header">Stories</div>
       <div class="stories-container">
         <div class="story-card">
           <img
@@ -180,13 +186,17 @@
       </div>
 
       <div class="view-all">
-        <button>View All ></button>
+        <button id="view-all-5">View All ></button>
       </div>
     </section>
 
     <section class="interviews-section">
-      <div class="section-header">Interviews & Lectures</div>
-      <div class="section-subtitle">Learning from various experts</div>
+      <div class="section-header" id="interviews-title">
+        Interviews & Lectures
+      </div>
+      <div class="section-subtitle" id="interviews-subtitle">
+        Learning from various experts
+      </div>
 
       <div class="interview-card">
         <img
@@ -209,13 +219,15 @@
       </div>
 
       <div class="view-all">
-        <button>View All</button>
+        <button id="view-all-2">View All</button>
       </div>
     </section>
 
     <section class="interviews-section">
-      <div class="section-header">Gallery</div>
-      <div class="section-subtitle">The history of art</div>
+      <div class="section-header" id="gallery-title">Gallery</div>
+      <div class="section-subtitle" id="gallery-subtitle">
+        The history of art
+      </div>
 
       <div class="interview-card">
         <img
@@ -226,12 +238,12 @@
       </div>
 
       <div class="view-all">
-        <button>View All</button>
+        <button id="view-all-3">View All</button>
       </div>
     </section>
 
     <section class="stories-section">
-      <div class="stories-header">Stories</div>
+      <div class="stories-header" id="more-stories-header">More from Sony design</div>
       <div class="stories-container">
         <div class="story-card">
           <img
@@ -284,15 +296,19 @@
       </div>
 
       <div class="view-all">
-        <button>View All ></button>
+        <button id="view-all-4">View All ></button>
       </div>
     </section>
 
     <section class="related-section">
-      <div class="related-header">Related Information</div>
+      <div class="related-header" id="related-title">Related Information</div>
       <div class="related-grid">
         <a href="#" class="related-item">
-          <img src="assets/images/Design/banner_sonypark.avif" alt="Sony Park" class="related-image" />
+          <img
+            src="assets/images/Design/banner_sonypark.avif"
+            alt="Sony Park"
+            class="related-image"
+          />
         </a>
         <a href="#" class="related-item">
           <img
@@ -320,6 +336,7 @@
 
     <div id="footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/lang.js"></script>
     <script src="js/design.js"></script>
     <script src="js/main.js"></script>
   </body>
