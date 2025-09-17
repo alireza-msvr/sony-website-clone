@@ -1,0 +1,55 @@
+/* START FOR LANGUAGE BAR */
+.languageBar{
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.languageBar div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.languageBar > :first-child p {
+    font-size: 10px;
+
+}
+.languages p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.languages :first-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.425);
+    padding-right: 8px;
+    color: var(--color-accent)
+}
+
+/* START FOR TITLE BAR */
+.titleBar{
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleBar h2{
+    font-size: 32px;
+}
+.titleBar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--color-muted) ;
+    border-radius: 4px;
+    padding: 1px 8px;
+
+}
+.titleBar p {
+    font-size: 12px;
+    color: var(--color-muted);
+}
+.titleBar i {
+    
+    color: var(--color-muted);
+}
