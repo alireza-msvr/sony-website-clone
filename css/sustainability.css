@@ -116,5 +116,61 @@
 .chart p{
     font-size: 14px;
 }
+/* START FOR VIDEO VISION */
+
+.vision-video{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 120px;
+}
+.videoContainer{
+    position: relative;
+    border: 2px solid black;
+    width: 70%;
+    height: 90vh;
+}
+.videoContainer img{
+   /* object-fit: contain; */
+   width: 100%;
+   height: 100%;
+} 
+.videoContainer i{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    font-size: 72px;
+    color: rgb(27, 27, 27);
+  
+}
+.vision-video p {
+    font-size: 22px;
+    font-weight: bolder;
+    color:var(--color-button-bg);
+}
+.vision-video a{
+    color:var(--color-button-bg);
+   
+    font-weight: bolder;
+}
+.vision-video a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.vision-video :last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    /* margin-top: 16px; */
+}
+.vision-video :last-child >i{
+    color: gray;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
 
 
