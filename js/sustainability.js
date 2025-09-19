@@ -30,3 +30,11 @@ backToTopbtn.addEventListener('click', () => {
     });
 backToTopbtn.classList.remove('show');
 });
+
+const menuBTN = document.querySelector('#menuBTN')
+const megaMenuEl = document.querySelector('.magaMenu')
+
+menuBTN.addEventListener('click',()=>{
+    console.log(1)
+    megaMenuEl.classList.toggle('show')
+})

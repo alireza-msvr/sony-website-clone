@@ -43,6 +43,7 @@
     border: 1px solid var(--color-muted) ;
     border-radius: 4px;
     padding: 1px 8px;
+    cursor: pointer;
 
 }
 .titleBar p {
@@ -501,6 +502,49 @@
   font-size: 32px;
 }
 .show {
-  display: block;
+  display: block !important;
   opacity: 1;
+}
+
+/* START FOR MEGAMENU */
+.magaMenu{
+    position: absolute;
+    top:175px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #474747a1;
+    backdrop-filter: bulr(20px);
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+.subMegaMenu{
+    padding: 64px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    text-align: start;
+}
+.subMegaMenu div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+.subMegaMenu div p{
+    color: #616060;
+    font-size: 14px;
+    font-weight: bold;
+}
+.subMegaMenu div i{
+    color: #616060;
+    font-size: 24px;
+}
+.showMega{
+    display: block;
 }
