@@ -336,3 +336,45 @@
     justify-content: start;
     align-items: start;
 }  
+
+/* START FOR RELATED INFORMATON */
+.InformationGroup{
+    margin: 64px 80px ;
+   
+}
+.InformationGroup h2{
+    color: #3b3b3b;
+}
+.InformationGroup hr{
+    margin-top: 20px;
+}
+.linkContainer{
+    margin-top: 48px;
+    
+}
+.linkContainer div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items:center;
+    gap: 16px;
+    transition: all 0.5s;
+}
+.linkContainer div :first-child{
+    color: #616161;
+    font-size: 10px;
+}
+.linkContainer div :last-child{
+    color: #818181;
+    font-size: 24px;
+}
+.linkContainer div a{
+    color: #616161;
+    font-size: 13px;
+    transition: all 0.5s;
+    
+}
+.linkContainer div:hover a{
+    text-decoration: underline;
+    color: #424242;
+}
