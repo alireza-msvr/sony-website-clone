@@ -1,4 +1,4 @@
-"use strict";
+`use strict`;
 async function loadComponent(id, file) {
   try {
     const res = await fetch(file);

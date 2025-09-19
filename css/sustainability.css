@@ -135,7 +135,11 @@
    /* object-fit: contain; */
    width: 100%;
    height: 100%;
+   transition: all 0.5s;
 } 
+.videoContainer img:hover{
+    opacity: 0.7;
+}
 .videoContainer i{
     position: absolute;
     top: 55%;
@@ -170,6 +174,106 @@
     color: gray;
     font-size: 32px;
     font-weight: lighter;
+}
+/* START FOR STORIE VISION */
+.stories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 40px;
+}
+.stories h2{
+    color:#333333 ;
+    font-size: 28px;
+}
+.storiesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin: 20px 40px;
+    width: 90%;
+    overflow-x: scroll;          
+    scroll-behavior: smooth;
+    
+}
+.storiesContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.storieCard{
+    width: 320px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    flex-shrink: 0; 
+    
+}
+.storieCard img{
+    width: 100%;
+    height: 50%;
+}
+.date{
+    font-size: 13px;
+    color: #818181;
+}
+.titleStorie{
+    font-size: 15px;
+    color: #424242;
+    font-weight: 700;
+}
+.bodeStorie{
+    font-size: 14px;
+    color: #818181;
+    
+}
+.groupwide{
+    font-size: 12px;
+    color: #504f4f;
+    background-color: #d4d4d4;
+    border-radius: 16px;
+    padding: 2px 8px;
+}
+
+.hide{
+    display: none;
+}
+#leftBTN{
+    border-radius: 50px;
+    background-color: #424242;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 40px;
+
+}
+#leftBTN i {
+    color: #d4d4d4;
+    font-size: 28px;
+}
+#rightBTN{
+    border-radius: 50px;
+    background-color: #424242;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 40px;
+
+}
+#rightBTN i {
+    color: #d4d4d4;
+    font-size: 28px;
 }
 
 /* START FOR CATEGORY */
@@ -250,7 +354,7 @@
 .report img:hover{
     opacity: 0.7;
 }
-.report div{
+.boxLink{
     border: 1px solid #DADADA;
     width: 500px;
     height: 60px;
@@ -260,13 +364,13 @@
     transition: all 0.5s;
     
 }
-.report div:hover{
+.boxLink:hover{
     background-color: #DADADA ;
 }
-.report div p{
+.boxLink p{
     color: #474747;
 }
-.report div i{
+.boxLink i{
     color: #888888;
     margin-left: 64px;
     font-size: 28px;
@@ -377,4 +481,26 @@
 .linkContainer div:hover a{
     text-decoration: underline;
     color: #424242;
+}
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #99999983;
+  backdrop-filter: blur(20px);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 1100;
+  display: none;
+}
+
+.backToTop i {
+  font-size: 32px;
+}
+.show {
+  display: block;
+  opacity: 1;
 }
