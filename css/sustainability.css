@@ -229,5 +229,45 @@
     font-size: 24px;
 }
 
-
-
+/* START FOR REPORT */
+.report{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    margin-top: 120px;
+}
+.report h2{
+    font-size: 28px;
+    color: #3d3d3d;
+}
+.report img{
+    width: 90%;
+    height: 90%;
+    transition: all 0.5s;
+}
+.report img:hover{
+    opacity: 0.7;
+}
+.report div{
+    border: 1px solid #DADADA;
+    width: 500px;
+    height: 60px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    
+}
+.report div:hover{
+    background-color: #DADADA ;
+}
+.report div p{
+    color: #474747;
+}
+.report div i{
+    color: #888888;
+    margin-left: 64px;
+    font-size: 28px;
+}
