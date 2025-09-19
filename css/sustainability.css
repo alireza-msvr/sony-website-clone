@@ -31,6 +31,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+ 
+    background-color: #F5F5F5;
+
+}
+.titlebar-scroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
 }
 .titleBar h2{
     font-size: 32px;
@@ -525,7 +535,7 @@
     padding: 64px;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    background-color: white;
+    background-color: #F5F5F5;
     width: 100%;
     height: 50%;
     text-align: start;
