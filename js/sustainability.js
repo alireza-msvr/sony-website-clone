@@ -45,3 +45,14 @@ menuBTN.addEventListener('click',()=>{
 
     megaMenuEl.classList.toggle('show')
 })
+
+// START FOR SUBMENU ABOUT
+const clsBTNforAbout = document.querySelector('#clsBTN-about')
+const aboutLinkEL = document.querySelector('#aboutLink')
+const subAboutEL = document.querySelector('.subMenu-About')
+clsBTNforAbout.addEventListener('click',()=>{
+    subAboutEL.classList.remove('show')
+})
+aboutLinkEL.addEventListener('click',()=>{
+    subAboutEL.classList.toggle('show')
+})

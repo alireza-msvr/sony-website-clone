@@ -1,3 +1,35 @@
+/* START FOR SUBMENU FOR ABOUT */
+.subMenu-About{
+    position: absolute;
+    background-color: #2B2B2B;
+    left: 30%;
+    padding: 30px;
+    width: 33%;
+    display: none;
+}
+
+.subMenu-About div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px ;
+}
+.subMenu-About :first-child p{
+    font-size: 18px;
+}
+.subMenu-About div p , i{
+    color: white;
+    font-size: 14px ;
+}
+#clsBTN-about{
+    position: absolute;
+    top :34px;
+    left: 90%;
+    background-color: #2B2B2B;
+    border: none;
+}
+
 /* START FOR LANGUAGE BAR */
 .languageBar{
     padding: 12px 32px;
