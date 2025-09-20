@@ -101,8 +101,9 @@
 
 .banner img{
     width: 100%;
-    height: 65vh;
+    height: auto;
     margin-top: 16px;
+    
 }
 
 /* START FOR VISION SECTION */
@@ -589,4 +590,95 @@
 }
 .showMega{
     display: block;
+}
+@media screen and (max-width:700px) {
+    .chart{
+        flex-direction: column;
+    }
+    .videoContainer{
+        width: 90%;
+        height: auto;
+    }
+    .vision-video{
+        margin-top: 60px;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container-cardRelated{
+        flex-direction: column;
+    }
+    .boxLink{
+        width: 300px;
+        height: 45px;
+    }
+    .boxLink p {
+        font-size: 14px;
+    }
+    .vision :nth-child(2){
+        font-size: 20px;
+    }
+    .vision :last-child{
+        font-size: 11px;
+    }
+    .chart img {
+        width: 90%;
+        height: auto;
+    }
+    .videoContainer i{
+        font-size: 45px;
+    }
+    .vision-video a{
+        font-size: 14px;
+    }
+    .vision-video :last-child >i{
+        font-size: 20px;
+    }
+    .category{
+        padding: 0 20px;
+    }
+    .relatedContent{
+        margin: 20px;
+        align-items: center;
+    }
+    #leftBTN{
+        width: 35px;
+        height: 35px;
+        left: 10px;
+    }
+    #rightBTN{
+        width: 35px;
+        height: 35px;
+        right: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .InformationGroup{
+    margin:24px ;
+   
+}
+}
+@media screen and (max-width:400px){
+    .chart{
+        gap: 24px;
+    }
+    .chart div{
+        gap: 16px;
+    }
+    .chart h2{
+        font-size: 24px;
+    }
+    .chart p{
+    font-size: 12px;
+    }
+    .vision-video a{
+        font-size: 12px;
+    }
+    .stories h2{
+        font-size: 20px;
+    }
 }
